@@ -28,9 +28,6 @@ Python standard library only; no installation or keys required. The script deter
 3. Validate by distinct-lead group checks and independent assertions.
 4. Summarize the result only after it passes tests.
 
-## Suggested application explanation (edit to reflect your own review)
-
-> I built a reproducible student-housing booking funnel audit using Python, SQLite, and ChatGPT-assisted scaffolding. It creates synthetic inquiry and booking events and measures unique-lead conversion by channel. An initial count-of-events approach would overstate bookings because some booking events are duplicated. I validated the metric at the lead level with DISTINCT and independent checks, then documented the corrected logic and reproducible outputs.
 
 ## Files
 - `analyze.py`: dataset generation, SQL metrics and validation
