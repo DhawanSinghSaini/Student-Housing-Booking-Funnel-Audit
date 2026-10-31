@@ -1,0 +1,41 @@
+{
+  "dataset": "Synthetic demonstrator; NOT actual Amber operational data",
+  "inquiry_leads": 500,
+  "flawed_ai_draft_row_count": 311,
+  "correct_distinct_booking_leads": 300,
+  "overcount_if_unvalidated": 11,
+  "conversion_pct": 60.0,
+  "duplicate_booking_lead_groups": 11,
+  "by_channel": [
+    {
+      "channel": "organic",
+      "inquiries": 142,
+      "bookings": 86,
+      "conversion_pct": 60.56
+    },
+    {
+      "channel": "referral",
+      "inquiries": 143,
+      "bookings": 86,
+      "conversion_pct": 60.14
+    },
+    {
+      "channel": "social",
+      "inquiries": 72,
+      "bookings": 43,
+      "conversion_pct": 59.72
+    },
+    {
+      "channel": "paid",
+      "inquiries": 143,
+      "bookings": 85,
+      "conversion_pct": 59.44
+    }
+  ],
+  "validation_checks": [
+    "uniqueness of lead in conversion denominator",
+    "booking count <= inquiries",
+    "nonnegative value",
+    "independent Python vs SQLite event row counts"
+  ]
+}
